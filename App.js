@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  TouchableOpacity
 } from 'react-native';
 
 import {
@@ -23,6 +24,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const App: () => React$Node = () => {
   return (
@@ -32,6 +34,12 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
+            <TouchableOpacity>
+              <AntDesign
+              name='left'
+              size={40}
+              />
+              </TouchableOpacity>
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
