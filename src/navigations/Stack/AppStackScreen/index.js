@@ -6,10 +6,43 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../../screens/Home';
 import Signup from '../../../screens/Signup';
 import Signin from '../../../screens/Signin';
+import HomeOne from '../../../screens/Home1';
 import DrawerContent from '../../DrawerContent';
 const AppStackScreen = createStackNavigator();
 const Drawer = createDrawerNavigator();
 const BottomTab = createBottomTabNavigator();
+
+// const HomeStack=createStackNavigator();
+
+// const HomeStackScreens = ({ navigation }) => {
+//     return (
+//         <HomeStack.Navigator
+//             gestureEnabled={false}
+//         // headerMode='none'
+//         >
+//             <HomeStack.Screen
+//                 name='Home'
+//                 component={Home}
+//                 // options={{
+//                 //     headerRight: () => (
+//                 //         <Button title="press" onPress={() => navigation.toggleDrawer()} />
+//                 //     ),
+//                 // }}
+//             />
+//                   <HomeStack.Screen
+//                 name='HomeOne'
+//                 component={HomeOne}
+//                 // options={{
+//                 //     headerRight: () => (
+//                 //         <Button title="press" onPress={() => navigation.toggleDrawer()} />
+//                 //     ),
+//                 // }}
+//             />
+//         </HomeStack.Navigator>
+//     );
+// }
+
+
 const StackScreens = ({ navigation }) => {
     return (
         <AppStackScreen.Navigator
@@ -35,11 +68,6 @@ const BottomTabScreen = ({navigation}) => {
             <BottomTab.Screen
                 name='Home'
                 component={Home}
-                // options={{
-                //     headerRight: () => (
-                //         <Button title="press" onPress={() => navigation.toggleDrawer()} />
-                //     )
-                // }}
             />
             <BottomTab.Screen
                 name='Signin'
