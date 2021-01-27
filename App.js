@@ -11,12 +11,12 @@ const App = () => {
     setTimeout(() => {
       setData({
         ...data,
-        isLogin: true,
+        isLogin: false,
         switchApp:{
           isLoading:false
         }
       })
-    }, 10000)
+    }, 1000)
   }, [])
 
   const [data, setData] = useState({
