@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { navigationRef } from './src/navigations/NavigationService';
+import { NavigationContainer } from '@react-navigation/native';
+import { navigationRef } from './src/navigations/NavigationService';
 // import AuthStack from "./src/navigations/Stack/AuthStackScreen";
 // import AppStack from './src/navigations/Stack/AppStackScreen';
 // import SplashStack from './src/navigations/Stack/SplashScreenStack';
-import MyTest from './src/screens/MyTest/MyTest';
+import Notification from './src/components/PushNotification';
+import CustomSearch from "./src/components/CustomSearch";
+// import MyTest from './src/screens/MyTest/MyTest';
 const App = () => {
   
   // useEffect(() => {
@@ -27,7 +29,6 @@ const App = () => {
     }
   })
 
-  console.log("yes")
   return (
     // <NavigationContainer ref={navigationRef}>
     //   {
@@ -43,7 +44,9 @@ const App = () => {
     //   }
 
     // </NavigationContainer>
-    <MyTest/>
+    // <MyTest/>
+    // <Notification/>
+    <CustomSearch/>
   );
 };
 

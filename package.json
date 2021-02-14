@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/push-notification-ios": "^1.8.0",
     "@react-navigation/bottom-tabs": "^5.11.6",
     "@react-navigation/compat": "^5.3.13",
     "@react-navigation/drawer": "^5.12.2",
@@ -25,6 +26,7 @@
     "react-native-gesture-handler": "^1.9.0",
     "react-native-i18n": "^2.0.15",
     "react-native-localize": "^2.0.1",
+    "react-native-push-notification": "^7.2.1",
     "react-native-reanimated": "^1.13.2",
     "react-native-restart": "0.0.20",
     "react-native-safe-area-context": "^3.1.9",
