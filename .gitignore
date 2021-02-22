@@ -59,4 +59,4 @@ buck-out/
 /ios/Pods/
 
 ## Code Customize
- src/
+/src/actions
